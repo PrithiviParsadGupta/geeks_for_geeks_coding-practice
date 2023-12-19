@@ -1,0 +1,6 @@
+  int kthSmallest(int arr[], int l, int r, int k) {
+        //code here
+         int n = sizeof(arr)/sizeof(arr[0]);
+        sort(arr,arr+r+1);
+        return arr[k-1];
+    }

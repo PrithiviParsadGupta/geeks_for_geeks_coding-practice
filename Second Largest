@@ -1,0 +1,19 @@
+	int print2largest(int arr[], int n) {
+	  
+	  sort(arr,arr+n);
+     int second_largest=0;
+for(int i=n-2;i>=0;i--)
+{
+    if(arr[i] !=arr[n-1])
+    {
+        second_largest=arr[i];
+        break;
+    }
+}
+if(second_largest==0)
+{
+    second_largest=-1;
+}
+return second_largest;
+
+	}

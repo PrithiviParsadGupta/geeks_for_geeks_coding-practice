@@ -1,0 +1,14 @@
+//User function template for C++
+class Solution{
+public:
+	int maxSortedAdjacentDiff(int* arr, int n) {
+	    // code here
+	    sort(arr,arr+n);
+	    int maxi=0;
+	    for(int i=1;i<n;i++)
+	    {
+	        maxi=max(maxi,arr[i]-arr[i-1]);
+	    }
+	    return maxi;
+	}
+};
